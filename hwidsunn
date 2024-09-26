@@ -5,8 +5,8 @@ echo "============================="
 echo "    HWID Finder by Codersunn  "
 echo "============================="
 
-# Get the HWID (this is just a placeholder command, replace with your actual HWID fetching command)
-HWID=$(cat /var/lib/dbus/machine-id)
+# Get the HWID (for macOS)
+HWID=$(ioreg -l | grep IOPlatformUUID | awk '{print $3}')
 
 # Display the HWID in a highlighted square
 echo "┌─────────────────────────────┐"

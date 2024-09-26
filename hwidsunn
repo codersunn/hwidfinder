@@ -1,0 +1,4 @@
+#!/bin/bash
+# Get the hardware UUID (HWID)
+hwid=$(system_profiler SPHardwareDataType | awk '/UUID/{print $3}')
+echo "Your HWID is: $hwid"

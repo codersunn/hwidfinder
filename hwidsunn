@@ -1,4 +1,15 @@
 #!/bin/bash
-# Get the hardware UUID (HWID)
-hwid=$(system_profiler SPHardwareDataType | awk '/UUID/{print $3}')
-echo "Your HWID is: $hwid"
+
+# Display the header
+echo "============================="
+echo "    HWID Finder by Codersunn  "
+echo "============================="
+
+# Get the HWID (this is just a placeholder command, replace with your actual HWID fetching command)
+HWID=$(cat /var/lib/dbus/machine-id)
+
+# Display the HWID in a highlighted square
+echo "┌─────────────────────────────┐"
+echo "│         Your HWID:         │"
+echo "│         $HWID              │"
+echo "└─────────────────────────────┘"

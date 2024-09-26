@@ -6,7 +6,7 @@ echo "    HWID Finder by Codersunn  "
 echo "============================="
 
 # Get the HWID (for macOS)
-HWID=$(ioreg -l | grep IOPlatformUUID | awk '{print $3}')
+HWID=$(ioreg -l | grep -i "IOPlatformUUID" | awk '{print $3}' | tr -d '"')
 
 # Display the HWID in a highlighted square
 echo "┌─────────────────────────────┐"

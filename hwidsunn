@@ -2,7 +2,7 @@
 
 # Display the header
 echo "============================="
-echo "    HWID Finder by Codersunn  "
+echo "    HWID Finder by noplaysunn  "
 echo "============================="
 
 # Get the HWID (for macOS)
